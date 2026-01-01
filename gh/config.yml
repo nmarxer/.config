@@ -1,0 +1,15 @@
+# GitHub CLI Enterprise Configuration
+version: "1"
+editor: code
+browser: wsl-open
+prompt: enabled
+pager: batcat --plain
+aliases:
+    co: pr checkout
+    pv: pr view --web
+    pc: pr create --web
+    rv: repo view --web
+    rc: repo clone
+    il: issue list
+    ic: issue create --web
+    iv: issue view --web

@@ -1,0 +1,8 @@
+# Secure environment variables for GitHub CLI
+# Source this file in your shell configuration
+
+# GitHub token
+export GITHUB_PERSONAL_ACCESS_TOKEN="$(gh auth token 2>/dev/null || echo '')"
+
+# Audit logging
+export GH_AUDIT_LOG="$HOME/.config/gh/audit.log"
